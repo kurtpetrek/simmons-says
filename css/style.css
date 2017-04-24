@@ -1,0 +1,208 @@
+/* line 1, ../sass/style.scss */
+body {
+  background: #A3D7CA;
+}
+
+/* line 5, ../sass/style.scss */
+h1, h2 {
+  text-align: center;
+}
+
+/* line 9, ../sass/style.scss */
+.image-container {
+  width: 300px;
+  height: 433px;
+  margin: auto;
+  position: relative;
+}
+
+/* line 16, ../sass/style.scss */
+.left-arm {
+  position: absolute;
+  left: 25px;
+  top: 145px;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  cursor: pointer;
+}
+
+/* line 24, ../sass/style.scss */
+.move-left-arm {
+  -webkit-animation: move-left-arm 1s;
+          animation: move-left-arm 1s;
+}
+
+@-webkit-keyframes move-left-arm {
+  0%, 100% {
+    left: 25px;
+    top: 145px;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+  50% {
+    left: 6px;
+    top: 140px;
+    -webkit-transform: translate(-50%, 0%) rotate(30deg);
+            transform: translate(-50%, 0%) rotate(30deg);
+  }
+}
+
+@keyframes move-left-arm {
+  0%, 100% {
+    left: 25px;
+    top: 145px;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+  50% {
+    left: 6px;
+    top: 140px;
+    -webkit-transform: translate(-50%, 0%) rotate(30deg);
+            transform: translate(-50%, 0%) rotate(30deg);
+  }
+}
+/* line 41, ../sass/style.scss */
+.right-arm {
+  position: absolute;
+  left: 155px;
+  top: 164px;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+  cursor: pointer;
+}
+
+/* line 49, ../sass/style.scss */
+.move-right-arm {
+  -webkit-animation: move-right-arm 1s;
+          animation: move-right-arm 1s;
+}
+
+@-webkit-keyframes move-right-arm {
+  0%, 100% {
+    left: 155px;
+    top: 164px;
+    -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+  }
+  50% {
+    left: 175px;
+    top: 164px;
+    -webkit-transform: translate(-50%, -100%) rotate(30deg);
+            transform: translate(-50%, -100%) rotate(30deg);
+  }
+}
+
+@keyframes move-right-arm {
+  0%, 100% {
+    left: 155px;
+    top: 164px;
+    -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+  }
+  50% {
+    left: 175px;
+    top: 164px;
+    -webkit-transform: translate(-50%, -100%) rotate(30deg);
+            transform: translate(-50%, -100%) rotate(30deg);
+  }
+}
+/* line 66, ../sass/style.scss */
+.left-leg {
+  position: absolute;
+  left: 80px;
+  top: 297px;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  cursor: pointer;
+}
+
+/* line 74, ../sass/style.scss */
+.move-left-leg {
+  -webkit-animation: move-left-leg 1s;
+          animation: move-left-leg 1s;
+}
+
+@-webkit-keyframes move-left-leg {
+  0%, 100% {
+    left: 80px;
+    top: 297px;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+  50% {
+    left: 53px;
+    top: 279px;
+    -webkit-transform: translate(-50%, 0%) rotate(30deg);
+            transform: translate(-50%, 0%) rotate(30deg);
+  }
+}
+
+@keyframes move-left-leg {
+  0%, 100% {
+    left: 80px;
+    top: 297px;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+  50% {
+    left: 53px;
+    top: 279px;
+    -webkit-transform: translate(-50%, 0%) rotate(30deg);
+            transform: translate(-50%, 0%) rotate(30deg);
+  }
+}
+/* line 91, ../sass/style.scss */
+.right-leg {
+  position: absolute;
+  left: 137px;
+  top: 270px;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  cursor: pointer;
+}
+
+/* line 99, ../sass/style.scss */
+.move-right-leg {
+  -webkit-animation: move-right-leg 1s;
+          animation: move-right-leg 1s;
+}
+
+@-webkit-keyframes move-right-leg {
+  0%, 100% {
+    left: 137px;
+    top: 270px;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+  50% {
+    left: 170px;
+    top: 261px;
+    -webkit-transform: translate(-50%, 0%) rotate(-30deg);
+            transform: translate(-50%, 0%) rotate(-30deg);
+  }
+}
+
+@keyframes move-right-leg {
+  0%, 100% {
+    left: 137px;
+    top: 270px;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+  50% {
+    left: 170px;
+    top: 261px;
+    -webkit-transform: translate(-50%, 0%) rotate(-30deg);
+            transform: translate(-50%, 0%) rotate(-30deg);
+  }
+}
+/* line 116, ../sass/style.scss */
+#retry {
+  padding: 5px;
+  background: #688ACC;
+  cursor: pointer;
+  width: 63px;
+  border-radius: 5px;
+  font-size: 24px;
+  margin: auto;
+}

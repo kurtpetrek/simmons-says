@@ -63,9 +63,9 @@ function checkSequence() {
       compMoves = [];
       var btn = document.createElement('p');
       btn.innerHTML = 'Retry?';
-      btn.setAttribute('id', 'retry');
+      btn.classList.add('btn-container__btn', 'retry')
       btn.addEventListener('click', startOver, false);
-      document.body.appendChild(btn);
+      document.querySelector('.retry-container').appendChild(btn);
       return false;
     }
   }
@@ -78,7 +78,7 @@ function checkSequence() {
 function startOver(){
   round = 0;
   document.querySelector('#score').innerHTML = round;
-  document.body.removeChild(document.querySelector('#retry'));
+  document.querySelector('.retry-container').removeChild(document.querySelector('.retry'));
   document.querySelector('#coach').innerHTML = 'My Turn!'
   compTurn();
 }
@@ -111,4 +111,9 @@ function animateRightLeg(){
   }, 900);
 }
 
-compTurn();
+document.querySelector('.start-game').addEventListener('click', function(){
+  compTurn();
+  document.querySelector('.game').classList.remove('hide');
+  document.querySelector('.info').classList.add('hide');
+}, false);
+

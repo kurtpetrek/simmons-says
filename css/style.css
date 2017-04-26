@@ -73,10 +73,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 body {
   background: #A3D7CA;
   font-family: 'Raleway', sans-serif;
-  height: 100vh;
 }
 
-/* line 16, ../sass/style.scss */
+/* line 15, ../sass/style.scss */
 h1 {
   font-size: 40px;
   text-align: center;
@@ -85,12 +84,14 @@ h1 {
   margin: 1.5rem;
 }
 
-/* line 24, ../sass/style.scss */
-h1, h2 {
+/* line 23, ../sass/style.scss */
+h2 {
+  font-size: 30px;
   text-align: center;
+  margin: 1.5rem;
 }
 
-/* line 28, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 .info__text {
   width: 80%;
   background: rgba(255, 255, 255, 0.7);
@@ -99,11 +100,11 @@ h1, h2 {
   font-size: 20px;
 }
 
-/* line 36, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .btn-container {
   text-align: center;
 }
-/* line 39, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 .btn-container__btn {
   display: inline-block;
   padding: 1rem;
@@ -113,14 +114,13 @@ h1, h2 {
   cursor: pointer;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .disclaimer {
   font-size: 14px;
   text-align: center;
   width: 100%;
   color: #fff;
-  position: absolute;
-  bottom: 0px;
+  margin: 3rem 0rem;
 }
 
 /* line 59, ../sass/style.scss */

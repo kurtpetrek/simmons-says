@@ -11,9 +11,15 @@
 <body>
   <h1>Simmons Says</h1>
   <div class="info">
-    <p>Welcome to Simmons Says! This is an interactive game similar to Simon Says but featuring Richard Simmons aerobics moves. Simmons will move his arms or legs in an incremented sequence with each turn, your job is to follow the sequence by clicking on the correct limb in the correct order. You will have to wait for the movement to finish before clicking on the next body part so stay patient(we wouldn't want to overwhelm him). Simmons head nods are there for feedback and not part of the sequence. Are you Ready?</p>
+    <p class="info__text">Welcome to Simmons Says! This is an interactive game similar to Simon Says but featuring Richard Simmons aerobics moves. Simmons will move his arms or legs in an incremented sequence with each turn, your job is to follow the sequence by clicking on the correct limb in the correct order. You will have to wait for the movement to finish before clicking on the next body part so stay patient(we wouldn't want to overwhelm him). Simmons head movements are there for feedback and not part of the sequence. Are you Ready to play?</p>
+    
+    <div class="btn-container">
+      <p class="btn-container__btn start">Start Game!</p>
+    </div>
+    
   </div>
-  <div class="game">
+  
+  <div class="game hide">
     <h2 id="coach">Here we go!</h2>
 
     <div class="image-container">
@@ -26,9 +32,13 @@
     </div>
 
     <h1>Score: <span id="score">0</span></h1>
-
-    <p class="disclamer">This document is for educational purposes only. The code has been commented to help you learn. View source or visit <a href="https://github.com/kurtpetrek/simmons-says">https://github.com/kurtpetrek/simmons-says</a> to see how a game like this works.</p>
+    
+    <div class="btn-container retry-container">
+      <p class="btn-container__btn retry">Retry?</p>
+    </div>
   </div>
+    <p class="disclaimer">This document is for educational purposes only. The code has been commented to help you learn. View source or visit <a href="https://github.com/kurtpetrek/simmons-says">https://github.com/kurtpetrek/simmons-says</a> to see how a game like this works.</p>
+  
 
   <script src="js/script.js"></script>
 </body>

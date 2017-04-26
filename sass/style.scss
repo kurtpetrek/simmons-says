@@ -1,10 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@import "compass/reset";
+
+* {
+  box-sizing: border-box;
+
+}
+
 body {
   background: #A3D7CA;
+  font-family: 'Raleway', sans-serif;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  border-bottom: 2px solid #666;
+  padding-bottom: 5px;
+  margin: 1.5rem;
 }
 
 h1, h2 {
   text-align: center;
 }
+
+.info__text {
+  width: 80%;
+  background: rgba(255,255,255,0.7);
+  margin: 2rem auto;
+  padding: 1rem;
+  font-size: 20px;
+}
+
+.btn-container {
+  text-align: center;
+  
+  &__btn {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 20px;
+    background: #688ACC;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+
+.disclaimer {
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  bottom: 0px;
+}
+
 
 .image-container {
   width: 300px;
@@ -113,13 +163,11 @@ h1, h2 {
   }
 }
 
-#retry {
-  padding: 5px;
-  background: #688ACC;
-  cursor: pointer;
-  width: 63px;
-  border-radius: 5px;
-  font-size: 24px;
-  margin: auto;
+.hide {
+  display: none;
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
 }
 

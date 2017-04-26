@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Simmons Says</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-<h1>Simmons Says</h1>
-<h2 id="coach">Here we go!</h2>
- 
- <div class="image-container">
-   <img src="images/body.png" alt="" id="body">
-   <img src="images/left-arm.png" alt="" class="left-arm">
-   <img src="images/right-arm.png" alt="" class="right-arm">
-   <img src="images/left-leg.png" alt="" class="left-leg">
-   <img src="images/right-leg.png" alt="" class="right-leg">
-   
- </div>
- 
- <h1>Score: <span id="score">0</span></h1>
-  
-  
+<body>
+  <h1>Simmons Says</h1>
+  <div class="info">
+    <p>Welcome to Simmons Says! This is an interactive game similar to Simon Says but featuring Richard Simmons aerobics moves. Simmons will move his arms or legs in an incremented sequence with each turn, your job is to follow the sequence by clicking on the correct limb in the correct order. You will have to wait for the movement to finish before clicking on the next body part so stay patient(we wouldn't want to overwhelm him). Simmons head nods are there for feedback and not part of the sequence. Are you Ready?</p>
+  </div>
+  <div class="game">
+    <h2 id="coach">Here we go!</h2>
+
+    <div class="image-container">
+      <img src="images/body.png" alt="" id="body">
+      <img src="images/left-arm.png" alt="" class="left-arm">
+      <img src="images/right-arm.png" alt="" class="right-arm">
+      <img src="images/left-leg.png" alt="" class="left-leg">
+      <img src="images/right-leg.png" alt="" class="right-leg">
+
+    </div>
+
+    <h1>Score: <span id="score">0</span></h1>
+
+    <p class="disclamer">This document is for educational purposes only. The code has been commented to help you learn. View source or visit <a href="https://github.com/kurtpetrek/simmons-says">https://github.com/kurtpetrek/simmons-says</a> to see how a game like this works.</p>
+  </div>
+
   <script src="js/script.js"></script>
 </body>
+
 </html>
